@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Georgia, serif;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 40px 24px;
       line-height: 1.6;
@@ -27,14 +27,150 @@
       font-weight: 600;
     }
 
-    .container {
+    .hero {
       display: flex;
-      gap: 40px;
+      gap: 48px;
       align-items: flex-start;
+      margin-bottom: 30px;
     }
 
     .photo {
       flex: 0 0 500px;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .intro {
+      flex: 1;
+      padding-top: 10px;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 24px;
+      font-size: 3rem;
+      line-height: 1.1;
+    }
+
+    .intro p {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .bio {
+      max-width: 820px;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+
+    .bio p {
+      margin-bottom: 1.2em;
+      font-size: 1.05rem;
+    }
+
+    .bio ul {
+      margin: 0 0 1.2em 1.4em;
+      padding: 0;
+      font-size: 1.05rem;
+    }
+
+    .bio li {
+      margin-bottom: 0.7em;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .photo {
+        flex: 0 0 auto;
+        max-width: 520px;
+      }
+
+      h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications and Awards</a>
+    <a href="cv.pdf">CV</a>
+  </nav>
+
+  <div class="hero">
+    <div class="photo">
+      <img src="profile_photo.jpg" alt="Justin Robinson">
+    </div>
+
+    <div class="intro">
+      <h1>Justin Robinson</h1>
+      <p><strong>Welcome to my website!</strong></p>
+      <p>
+        I'm a postdoctoral researcher at Nuffield College, University of Oxford,
+        working on the <em>Economic Insecurity: Finding Answers and Solutions</em>
+        project at the Nuffield Politics Research Centre.
+      </p>
+    </div>
+  </div>
+
+  <div class="bio">
+    <p>
+      My work sits within the fields of political behaviour and political psychology,
+      and coalesces around three main themes:
+    </p>
+
+    <ul>
+      <li>
+        Economic voting, political economy and the way that economic insecurity
+        shapes political preferences, with a focus on Britain.
+      </li>
+      <li>
+        Psychological explanations of why people support the parties and policies
+        that they do, with a particular focus on upbringing and socialization.
+      </li>
+      <li>
+        Understanding how the intersection of individual-level experiences and
+        wider social or political context shapes political behaviour.
+      </li>
+    </ul>
+
+    <p>
+      Methodologically, I'm interested in advanced statistical approaches with a
+      focus on causal inference using large-<em>N</em> observational data.
+    </p>
+
+    <p>
+      Having completed my PhD at the University of York in early 2025, I have so
+      far published in the <em>British Journal of Political Science</em>,
+      <em>Political Behavior</em>, <em>Electoral Studies</em> and
+      <em>Ethnic and Racial Studies</em>.
+    </p>
+
+    <p>
+      I'm also interested in generating impact beyond the academy. In addition to
+      an ongoing collaboration with the Joseph Rowntree Foundation, my research
+      has been featured in <em>The Conversation</em>, <em>The Observer</em>, and
+      <em>The New Statesman</em>.
+    </p>
+
+    <p>
+      I have experience teaching quantitative methods (R and Stata), comparative
+      politics and political behaviour.
+    </p>
+  </div>
+
+</body>
+</html>      flex: 0 0 500px;
     }
 
     .photo img {
