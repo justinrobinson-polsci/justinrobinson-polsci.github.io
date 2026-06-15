@@ -98,6 +98,31 @@
         font-size: 2.4rem;
       }
     }
+
+    .contact-container {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-right p {
+  margin-bottom: 0.6em;
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
   </style>
 </head>
 <body>
@@ -109,6 +134,10 @@
     <a href="contact.html">Contact</a>
     <a href="cv.pdf">CV</a>
   </nav>
+
+  <div class="contact-container"> 
+    <div class="contact-left"> 
+      <h1>Contact</h1>
 
   <p>
     I'm best contacted via email at:
@@ -122,6 +151,18 @@
       and my Google Scholar profile is <a href="https://scholar.google.com/citations?user=hbb4R_8AAAAJ&hl=en">on this page</a>. 
     </a>
   </p>
+
+      </div> <div class="contact-right"> 
+        <h1>Affiliation</h1> 
+        
+        <p> Nuffield College<br> 
+          New Road<br> 
+          Oxford<br> 
+          OX1 1NF<br> 
+          United Kingdom 
+        </p> 
+      </div> 
+  </div>
 </body>
 </html>
 
